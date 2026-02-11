@@ -8,7 +8,7 @@
   color-scheme: "dark";
 
   /* Surfaces: Depth for the Navy Background */
-  --color-base-100: #151c37;
+  --color-base-100: #151c37; 
   --color-base-200: #1b2341;
   --color-base-300: #242d4d;
   --color-base-content: #f4f1ed; /* Bone text on navy background */
@@ -41,4 +41,6 @@
   --radius-field: 0.25rem;
   --radius-box: 0.5rem;
   --border: 1px;
+  --font-display: "Kanit", sans-serif;
+  --font-body: "Inter", sans-serif;
 }

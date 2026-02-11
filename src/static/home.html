@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block title %}Home - My Website{% endblock %}
+
+{% block content %}
+
+<main class="pb-16 lg:pb-0">  
+  <section class="hero bg-base-200 min-h-screen rounded-b-4xl shadow-xs mb-10 relative">
+      <img 
+    src="https://i.ibb.co/m5KnxWRD/hyprlogo-1.png" 
+    alt="Hyprground Logo"
+    class="lg:hidden absolute top-6 left-6 h-6 z-20"
+  />
+
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img
+        src="https://iili.io/fpVeE67.md.png" alt="fpVeE67.md.png" 
+        class="rounded-lg shadow-2xl"
+      />
+      <div class="max-w-md space-y-6">
+        <p class="font-['Barlow_Semi_Condensed'] text-2xl text-white font-medium uppercase tracking-wide leading-tight border-l-4 border-primary pl-4">
+            A PREMIER PICKLEBALL FACILITY DESIGNED FOR THE BOLD. 
+            VIBRANT ATMOSPHERE. EXCEPTIONAL PLAY.
+        </p>
+            
+        <p class="font-['Space_Grotesk'] text-white/60 text-lg leading-relaxed tracking-wider">
+            Whether you're refining your game or looking for top-tier competition, 
+            HYPRGROUND provides the ultimate setting for enthusiasts to thrive.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section x-data="{
+    scrollLeft(){
+      this.$refs.carousel.scrollBy({ left: -300, behavior: 'smooth' })
+    },
+    scrollRight(){
+      this.$refs.carousel.scrollBy({ left: 300, behavior: 'smooth' })
+    }   
+  }" class="m-6 rounded-4xl shadow-xs bg-base-200 flex flex-col">
+    <div class="p-6 flex justify-between items-center">
+      <div>
+      <h2 class="font-display italic text-4xl text-white uppercase tracking-tighter">
+          Explore <span class="text-primary">Venues</span>
+      </h2>
+      <p class="font-['Space_Grotesk'] text-white/40 text-xs uppercase tracking-[0.3em] mt-2">
+          Find your nearest ground
+      </p>
+      </div>
+      
+      <div>
+  <a href="#" class="inline-flex items-center gap-2 group">
+    <p class="font-medium">View All Venues</p>
+
+    <svg 
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      fill="none"
+      viewBox="0 0 24 24"
+      class="transition-transform duration-300 group-hover:translate-x-1"
+    >
+      <path 
+        stroke="currentColor" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        stroke-width="2" 
+        d="m9 5 7 7-7 7"
+      />
+    </svg>
+  </a>
+</div>
+
+    </div>
+    <div x-ref="carousel" class="carousel carousel-center gap-4 p-6 ">
+      <div class="card carousel-item w-79 flex-none shadow-sm bg-base-100 rounded-2xl">
+        <figure class="px-4 pt-4">
+          <img src="https://i.ibb.co/PGrpF91B/unnamed.webp" alt="hyprground cyberjaya" class="rounded-xl" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-lg font-medium">HYPRGROUND Cyberjaya</h2>
+          <div class="relative overflow-hidden whitespace-nowrap max-w-25">
+            <p class="text-sm text-white/60 truncate">
+              Level 4, Centre Court, Tamarind Square, Persiaran Multimedia, Cyber 10, 63000 Cyberjaya, Selangor, Malaysia
+            </p>
+          </div>
+        </div>
+
+      </div>
+<div class="card carousel-item w-79 flex-none shadow-sm bg-base-100 rounded-2xl">
+        <figure class="px-4 pt-4">
+          <img src="https://i.ibb.co/PGrpF91B/unnamed.webp" alt="hyprground cyberjaya" class="rounded-xl" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-lg font-medium">HYPRGROUND Cyberjaya</h2>
+          <div class="relative overflow-hidden whitespace-nowrap max-w-25">
+            <p class="text-sm text-white/60 truncate">
+              Level 4, Centre Court, Tamarind Square, Persiaran Multimedia, Cyber 10, 63000 Cyberjaya, Selangor, Malaysia
+            </p>
+          </div>
+        </div>
+
+      </div>
+<div class="card carousel-item w-79 flex-none shadow-sm bg-base-100 rounded-2xl">
+        <figure class="px-4 pt-4">
+          <img src="https://i.ibb.co/PGrpF91B/unnamed.webp" alt="hyprground cyberjaya" class="rounded-xl" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-lg font-medium">HYPRGROUND Cyberjaya</h2>
+          <div class="relative overflow-hidden whitespace-nowrap max-w-25">
+            <p class="text-sm text-white/60 truncate">
+              Level 4, Centre Court, Tamarind Square, Persiaran Multimedia, Cyber 10, 63000 Cyberjaya, Selangor, Malaysia
+            </p>
+          </div>
+        </div>
+
+      </div>
+<div class="card carousel-item w-79 flex-none shadow-sm bg-base-100 rounded-2xl">
+        <figure class="px-4 pt-4">
+          <img src="https://i.ibb.co/PGrpF91B/unnamed.webp" alt="hyprground cyberjaya" class="rounded-xl" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-lg font-medium">HYPRGROUND Cyberjaya</h2>
+          <div class="relative overflow-hidden whitespace-nowrap max-w-25">
+            <p class="text-sm text-white/60 truncate">
+              Level 4, Centre Court, Tamarind Square, Persiaran Multimedia, Cyber 10, 63000 Cyberjaya, Selangor, Malaysia
+            </p>
+          </div>
+        </div>
+
+      </div>
+<div class="card carousel-item w-79 flex-none shadow-sm bg-base-100 rounded-2xl">
+        <figure class="px-4 pt-4">
+          <img src="https://i.ibb.co/PGrpF91B/unnamed.webp" alt="hyprground cyberjaya" class="rounded-xl" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-lg font-medium">HYPRGROUND Cyberjaya</h2>
+          <div class="relative overflow-hidden whitespace-nowrap max-w-25">
+            <p class="text-sm text-white/60 truncate">
+              Level 4, Centre Court, Tamarind Square, Persiaran Multimedia, Cyber 10, 63000 Cyberjaya, Selangor, Malaysia
+            </p>
+          </div>
+        </div>
+
+      </div>
+<div class="card carousel-item w-79 flex-none shadow-sm bg-base-100 rounded-2xl">
+        <figure class="px-4 pt-4">
+          <img src="https://i.ibb.co/PGrpF91B/unnamed.webp" alt="hyprground cyberjaya" class="rounded-xl" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-lg font-medium">HYPRGROUND Cyberjaya</h2>
+          <div class="relative overflow-hidden whitespace-nowrap max-w-25">
+            <p class="text-sm text-white/60 truncate">
+              Level 4, Centre Court, Tamarind Square, Persiaran Multimedia, Cyber 10, 63000 Cyberjaya, Selangor, Malaysia
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="flex justify-center mb-6 pt-6">
+      <button @click="scrollLeft" class="btn btn-circle btn-sm mx-2 bg-base-300 hover:bg-base-200 border-0">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+      </button>
+      <button @click="scrollRight" class="btn btn-circle btn-sm mx-2 bg-base-300 hover:bg-base-200 border-0">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+      </button>
+    </div>
+  </section>
+
+</main>
+{% endblock %}

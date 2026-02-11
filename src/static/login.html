@@ -1,0 +1,134 @@
+<!doctype html>
+<html theam="hypr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/output.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>login</title>
+  </head>
+  <body>
+    <nav class="hidden px-4 bg-neutral shadow-sm lg:flex">
+      <div class="navbar-start">
+        <a href="#">
+            <img src="https://i.ibb.co/m5KnxWRD/hyprlogo-1.png" class="h-6" />
+        </a>
+      </div>
+      <div class="navbar-center ">
+          <ul class="menu menu-horizontal font-semibold px-1">
+            <li><a class="hover:bg-primary hover:text-base-100 font-bold">Home</a></li>
+            <li><a class="hover:bg-primary hover:text-base-100 font-bold">Book</a></li>
+            <li><a class="hover:bg-primary hover:text-base-100 font-bold">Venues</a></li>
+          </ul>
+      </div>
+      <div class="navbar-end">
+
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle border-2 border-transparent hover:border-primary avatar">
+            <div class="w-10 rounded-full">
+              <img alt="Tailwind CSS Navbar component" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
+          </div>
+          <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li class="menu-title text-secondary uppercase text-[10px] tracking-widest px-4 py-2">Account</li>
+            <li><a class="hover:bg-primary hover:text-base-100 font-bold">Profile</a></li>
+            <li><a class="hover:bg-primary hover:text-base-100 font-bold">My Bookings</a></li>
+            <li><a class="hover:bg-primary hover:text-base-100 font-bold">Settings</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="dock dock-xs lg:hidden bg-base-100 border-t border-white/10 text-base-content">
+      <button class="text-primary">
+        <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <g fill="currentColor" stroke-linejoin="miter" stroke-linecap="butt">
+              <polyline points="1 11 12 2 23 11" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline>
+              <path d="m5,13v7c0,1.105.895,2,2,2h10c1.105,0,2-.895,2-2v-7" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></path>
+              <line x1="12" y1="22" x2="12" y2="18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></line>
+          </g>
+        </svg>
+        <span class="dock-label font-bold text-[10px] uppercase tracking-wider">Home</span>
+      </button>
+    
+    
+
+      <button class="text-base-content/50 hover:text-base-content transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7.757v8.486M7.757 12h8.486M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+        </svg>
+        <span class="dock-label text-[10px] uppercase tracking-wider">Book</span>
+      </button>
+
+    
+
+      <button class="text-base-content/50 hover:text-base-content transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+        </svg>
+        <span class="dock-label text-[10px] uppercase tracking-wider">Profile</span>
+      </button>
+    </div>    
+
+
+<section class="min-h-screen bg-base-200 flex flex-col items-center lg:justify-center gap-5">
+    
+    <div class="navbar bg-base-100 shadow-sm lg:hidden w-full justify-center">
+    <a class="btn btn-ghost text-xl"><img src="https://i.ibb.co/m5KnxWRD/hyprlogo-1.png" class="h-6" /></a>
+    </div>
+    
+    <div class="card bg-base-100 shadow-2xl">
+
+      <div class="card-body">
+        <h1 class="card-title text-3xl font-bold mb-4">Login to Your Account</h1>
+        <p class="mb-6 text-sm text-accent/70">Welcome back! Please enter your credentials to access your account.</p>
+        
+        <fieldset class="fieldset">
+          <label class="label">Email</label>
+          <input type="email" class="input w-full" placeholder="Email" />
+          <label class="label">Password</label>
+          <input type="password" class="input w-full" placeholder="Password" />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button class="btn btn-primary mt-4">Login</button>
+        </fieldset>
+        <div class="mt-4 text-sm">
+          <p>Don't have an account? <a class="link link-hover">Sign up</a></p>
+      </div>
+    </div>
+  
+</section>
+
+    <footer class="hidden rounded-t-4xl mt-10 footer bg-neutral text-neutral-content p-10 justify-between items-center lg:grid lg:grid-cols-2 ">
+        <aside class="flex flex-col items-start">
+            <svg viewBox="0 0 188 180" xmlns="http://www.w3.org/2000/svg" class="w-30 h-auto text-accent">
+                <g transform="translate(57,38)" class="fill-current">
+                    <path d="M0 0 C8.91 0 17.82 0 27 0 C27.33 14.85 27.66 29.7 28 45 C35.87134884 41.14933427 35.87134884 41.14933427 43.734375 37.28173828 C44.72953125 36.79946777 45.7246875 36.31719727 46.75 35.8203125 C47.75546875 35.32805176 48.7609375 34.83579102 49.796875 34.32861328 C53 33 53 33 61 31 C61 20.77 61 10.54 61 0 C69.58 0 78.16 0 87 0 C87 7.92 87 15.84 87 24 C90.96 24 94.92 24 99 24 C99 31.26 99 38.52 99 46 C96 47 96 47 87 47 C87 65.15 87 83.3 87 102 C78.42 102 69.84 102 61 102 C61 85.5 61 69 61 52 C44.43496314 56.79179976 44.43496314 56.79179976 28 62 C27.67 75.2 27.34 88.4 27 102 C18.09 102 9.18 102 0 102 C0 92.43 0 82.86 0 73 C-15.51033698 80.95401896 -29.56363182 88.82284417 -43 100 C-43 93.10541669 -34.45458608 86.33255369 -29.875 81.5 C-24.94406122 76.68152123 -19.43922248 72.6787538 -13.84375 68.67578125 C-12.98052879 68.04463661 -12.98052879 68.04463661 -12.09986877 67.40074158 C-10 66 -10 66 -7.69447327 64.90821838 C-4.98783008 63.51432289 -3.08044343 62.23629114 -1 60 C0.32264293 55.44102169 0.18817631 51.0086796 0.09765625 46.2890625 C0.10331465 44.95240091 0.11293261 43.61575074 0.12632751 42.27914429 C0.15086907 38.77663689 0.12193006 35.27657222 0.08154297 31.77429199 C0.04982565 28.19450503 0.0686126 24.61499972 0.08398438 21.03515625 C0.11041299 14.02140922 0.05305048 7.01539489 0 0 Z" />
+                </g>
+                <g transform="translate(31,116)" class="fill-current opacity-70">
+                    <path d="M0 0 C0 0.99 0 1.98 0 3 C-0.680625 3.639375 -1.36125 4.27875 -2.0625 4.9375 C-2.701875 5.618125 -3.34125 6.29875 -4 7 C-3.67705523 9.110361 -3.67705523 9.110361 -3 11 C-5.12342658 12.64789866 -7.2486449 14.29338788 -9.375 15.9375 C-10.27992187 16.64036133 -10.27992187 16.64036133 -11.203125 17.35742188 C-15.7734375 20.88671875 -15.7734375 20.88671875 -18 22 C-14.09128898 13.39293937 -6.75760175 6.43409954 0 0 Z" />
+                </g>
+            </svg>       
+            <div class="mt-2">
+                <p class="font-bold text-2xl tracking-[0.2em] uppercase leading-none text-primary">HYPR<span class="font-medium">GROUND</span></p>
+                <p class="text-xs uppercase tracking-[0.4em] text-secondary mt-2">PICKLEBALL</p>
+            </div>
+        </aside>
+
+        <nav>
+            <h6 class="footer-title text-primary opacity-100 tracking-[0.2em]">JOIN THE CLUB</h6>
+            <div class="grid grid-flow-col gap-6">
+            <a href="https://www.instagram.com/hyprground/" class="hover:text-primary transition-colors cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61564984310363" class="hover:text-primary transition-colors cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+        
+            </div>
+            <p class="text-[10px] opacity-30 mt-4 uppercase tracking-widest">© 2026 HYPRGROUND. All Rights Reserved.</p>
+        </nav>
+
+    </footer>
+
+  </body>
+</html>
