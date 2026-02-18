@@ -140,6 +140,20 @@ class FacilityResponse(FacilityBase):
 class FacilityListResponse(ORMBase):
     facilities: list[FacilityResponse]
 
+class FacilityImgUpload(ORMBase):
+    img_content: UploadFile
+
+    @field_validator("img_content", mode="before")
+    def validate_image(cls, v):
+        if not v.content_type.startswith("image/"):
+            raise ValueError("Uploaded file must be an image")
+        return v
+    
+    
+
+
+    
+
 
 class ResourceBase(ORMBase):
     facility_id: UUID

@@ -38,10 +38,12 @@ class Facilities(Base):
     address: Mapped[str] = mapped_column(String(255))
     open_at: Mapped[ time | None] = mapped_column(TIME)
     close_at: Mapped[ time | None] = mapped_column(TIME)
+    images: Mapped[list[str] | None] = mapped_column(JSONB)
     amenities: Mapped[dict | None] = mapped_column(JSONB)
     created_at: Mapped[datetime] = mapped_column(TIMESTAMP(timezone=True), server_default=func.now())
     updated_at: Mapped[datetime | None] = mapped_column(TIMESTAMP(timezone=True), onupdate=func.now())
     resources: Mapped[list["Resources"]] = relationship("Resources", back_populates="facility")
+
 
 
     __table_args__ = (
@@ -67,6 +69,7 @@ class Resources(Base):
     description: Mapped[str | None] = mapped_column(String(500))
     created_at: Mapped[datetime] = mapped_column(TIMESTAMP(timezone=True), server_default=func.now())
     updated_at: Mapped[datetime | None] = mapped_column(TIMESTAMP(timezone=True), onupdate=func.now())
+    images: Mapped[list[str] | None] = mapped_column(JSONB)
     bookings: Mapped[list["Bookings"]] = relationship("Bookings", back_populates="resource")
     facility = relationship("Facilities", back_populates="resources")
     __table_args__ = (
@@ -92,6 +95,7 @@ class Bookings(Base):
     __table_args__ = (
         Index('ix_booking_resource_start_end', 'resource_id', 'start_time', 'end_time'),
     )
+
 
 
 
