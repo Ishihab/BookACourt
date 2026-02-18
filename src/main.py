@@ -11,8 +11,10 @@ app.include_router(api_router)
 
 app.mount("/static", StaticFiles(directory="src/static"), name="static")
 
-templates = Jinja2Templates(directory="src/static") 
+templates = Jinja2Templates(directory="src/templates") 
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    return templates.TemplateResponse("home.html", {"request": request})
+    return templates.TemplateResponse("pages/home.html", {"request": request})
+
+

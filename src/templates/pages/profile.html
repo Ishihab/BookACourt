@@ -1,0 +1,38 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Profile - Hyprground{% endblock %}
+
+{% block content %}
+<section class="p-6 lg:p-10">
+  <div class="max-w-4xl mx-auto">
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body">
+        <div class="flex flex-col items-center gap-3">
+          <div class="avatar">
+            <div class="w-28 rounded-full border-2 border-primary">
+              <img src="{{ current_user.profile_image_key or 'https://img.daisyui.com/images/profile/demo/yellingcat@192.webp' }}" />
+            </div>
+          </div>
+          <h1 class="font-bold text-2xl">{{ current_user.full_name or 'Player' }}</h1>
+          <p class="text-sm opacity-70">{{ current_user.email }}</p>
+        </div>
+        <div class="divider"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="card bg-base-300 rounded-box h-24 flex items-center justify-center">
+            <div class="text-center">
+              <p class="text-2xl font-extrabold">2</p>
+              <p>total bookings</p>
+            </div>
+          </div>
+          <div class="card bg-base-300 rounded-box h-24 flex items-center justify-center">
+            <div class="text-center">
+              <p class="text-2xl font-extrabold">2</p>
+              <p>total booking hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

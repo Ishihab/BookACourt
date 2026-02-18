@@ -1,12 +1,17 @@
 import asyncio
+import sys
+from pathlib import Path
 from logging.config import fileConfig
+
+# Add parent directory to path so 'src' module can be imported
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from sqlalchemy import pool
 from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import async_engine_from_config
-from core.config import settings
-from core.db import Base
-from models import Users, Facilities, refreshTokens
+from src.core.config import settings
+from src.core.db import Base
+from src.models import Users, Resources, Bookings, Facilities 
 import asyncpg
 from alembic import context
 

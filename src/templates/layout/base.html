@@ -1,5 +1,5 @@
 <!doctype html>
-<html theam="hypr">
+<html data-theme="hypr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -71,7 +71,7 @@
 
     
       {% if not current_user %}
-      <a href="/web/login/access-token" class="btn btn-ghost text-base-content/50 hover:text-base-content transition-colors">
+      <a href="/web/login" class="btn btn-ghost text-base-content/50 hover:text-base-content transition-colors">
       {% else %}
       <a href="#" class=" btn btn-ghost text-base-content/50 hover:text-base-content transition-colors">
       {% endif %}
@@ -83,9 +83,11 @@
     </div>    
 
 
-
+    <main id="main-content">
     {% block content %}
     {% endblock %}
+
+    </main>
 
     
 

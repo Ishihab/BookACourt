@@ -1,12 +1,11 @@
-{% extends "base.html" %}
+{% extends "layout/base.html" %}
 
 {% block title %}Log In{% endblock %}
 
 {% block content %}
-
 <section class="flex min-h-screen items-center justify-center bg-neutral relative">
-  <img 
-    src="https://i.ibb.co/m5KnxWRD/hyprlogo-1.png" 
+  <img
+    src="https://i.ibb.co/m5KnxWRD/hyprlogo-1.png"
     alt="Hyprground Logo"
     class="lg:hidden absolute top-6 left-6 h-6 z-20"
   />
@@ -18,7 +17,7 @@
         <input class="input w-full" type="email" name="email" placeholder="email" required />
         <label class="label">Password</label>
         <input class="input w-full" type="password" name="password" placeholder="password" required />
-        <button type="submit" class="b btn mt-4 uppercase btn-primary">submit</button>
+        <button type="submit" class="btn mt-4 uppercase btn-primary">submit</button>
       </form>
       <a class="link link-hover">Forgot password?</a>
       <p>Don’t Have An Account? <a href="/web/users/signup" class="link"> Sign Up</a></p>

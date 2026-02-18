@@ -1,0 +1,33 @@
+{% extends "layout/base.html" %}
+
+{% block title %}My Bookings - Hyprground{% endblock %}
+
+{% block content %}
+<section class="p-6 lg:p-10">
+  <div class="max-w-5xl mx-auto space-y-4">
+    <h1 class="text-3xl font-bold text-white">My Bookings</h1>
+
+    <ul class="list bg-base-100 rounded-3xl shadow-md">
+      <li class="list-row flex items-center gap-4">
+        <div class="text-center w-20 shrink-0">
+          <p class="text-xs uppercase opacity-60">Mon</p>
+          <div class="text-4xl font-light tabular-nums leading-none">01</div>
+          <p class="text-sm font-semibold opacity-70">Jan</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row flex-1 justify-between gap-2">
+          <div class="flex flex-col sm:items-center">
+            <div class="badge badge-success badge-sm mb-1">Success</div>
+            <div class="font-bold text-lg">Hyprground Cyberjaya</div>
+          </div>
+
+          <div class="sm:text-right">
+            <p class="font-medium">04:00 – 05:00</p>
+            <div class="text-xs uppercase font-semibold opacity-60">Community Court 1</div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+{% endblock %}

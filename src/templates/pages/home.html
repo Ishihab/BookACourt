@@ -1,0 +1,34 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Home - Hyprground{% endblock %}
+
+{% block content %}
+<main class="pb-16 lg:pb-0">
+  <section class="hero bg-base-200 min-h-screen rounded-b-4xl shadow-xs mb-10 relative">
+    <img
+      src="https://i.ibb.co/m5KnxWRD/hyprlogo-1.png"
+      alt="Hyprground Logo"
+      class="lg:hidden absolute top-6 left-6 h-6 z-20"
+    />
+
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img
+        src="https://iili.io/fpVeE67.md.png" alt="hero image"
+        class="rounded-lg shadow-2xl"
+      />
+      <div class="max-w-md space-y-6">
+        <p class="font-['Barlow_Semi_Condensed'] text-2xl text-white font-medium uppercase tracking-wide leading-tight border-l-4 border-primary pl-4">
+          A PREMIER PICKLEBALL FACILITY DESIGNED FOR THE BOLD.
+          VIBRANT ATMOSPHERE. EXCEPTIONAL PLAY.
+        </p>
+
+        <p class="font-['Space_Grotesk'] text-white/60 text-lg leading-relaxed tracking-wider">
+          Whether you're refining your game or looking for top-tier competition,
+          HYPRGROUND provides the ultimate setting for enthusiasts to thrive.
+        </p>
+        <a href="/web/venues" class="btn btn-primary uppercase">Explore Venues</a>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

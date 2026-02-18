@@ -4,8 +4,7 @@ from pwdlib import PasswordHash
 from sqlalchemy import select
 from src.core.config import settings
 from datetime import datetime, timedelta, timezone
-from secrets import token_urlsafe
-import hashlib
+
 
 
 password_hasher = PasswordHash.recommended()
@@ -30,13 +29,6 @@ def create_access_token(data: dict, expires_delta: int = TOKEN_EXPIRE_MINUTES):
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
-
-def create_refresh_token():
-    return token_urlsafe(32)
-
-def hash_refresh_token(token: str) -> str:
-    return hashlib.sha256(token.encode()).hexdigest()
-
 
 def verify_access_token(token: str):
     try:

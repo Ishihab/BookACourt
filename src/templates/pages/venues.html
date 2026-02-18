@@ -1,0 +1,36 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Venues - Hyprground{% endblock %}
+
+{% block content %}
+<section class="p-6 lg:p-10">
+  <div class="max-w-6xl mx-auto space-y-6">
+    <div>
+      <h1 class="text-3xl font-bold text-white">Venue List</h1>
+      <p class="text-white/60 mt-2">Discover all available locations and pick your next court.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <a href="/web/venues/cyberjaya" class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+        <figure class="px-4 pt-4">
+          <img src="https://i.ibb.co/PGrpF91B/unnamed.webp" alt="HYPRGROUND Cyberjaya" class="rounded-xl" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">HYPRGROUND Cyberjaya</h2>
+          <p class="text-sm opacity-70">Tamarind Square, Cyberjaya</p>
+        </div>
+      </a>
+
+      <a href="/web/venues/kl" class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+        <figure class="px-4 pt-4">
+          <img src="https://i.ibb.co/PGrpF91B/unnamed.webp" alt="HYPRGROUND KL" class="rounded-xl" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">HYPRGROUND KL</h2>
+          <p class="text-sm opacity-70">Kuala Lumpur City Centre</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}

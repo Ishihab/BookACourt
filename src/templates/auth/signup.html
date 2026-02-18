@@ -1,0 +1,29 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+<section class="flex min-h-screen items-center justify-center bg-neutral relative">
+  <img
+    src="https://i.ibb.co/m5KnxWRD/hyprlogo-1.png"
+    alt="Hyprground Logo"
+    class="lg:hidden absolute top-6 left-6 h-6 z-20"
+  />
+  <div class="card w-full max-w-lg shrink-0 bg-base-100 shadow-2xl">
+    <div class="card-body">
+      <h1 class="card-title">Sign Up</h1>
+      <form class="flex flex-col" method="post" action="/web/users/signup">
+        <label class="label">Full Name</label>
+        <input class="input w-full" type="text" placeholder="full name" name="full_name" required />
+        <label class="label">Email</label>
+        <input class="input w-full" type="email" placeholder="email" name="email" required />
+        <label class="label">Password</label>
+        <input class="input w-full" type="password" placeholder="password" name="password" required />
+        <button type="submit" class="btn mt-4 uppercase btn-primary">submit</button>
+      </form>
+      <a class="link link-hover">Forgot password?</a>
+      <p>Already Have An Account? <a href="/web/login" class="link"> Log In</a></p>
+    </div>
+  </div>
+</section>
+{% endblock %}

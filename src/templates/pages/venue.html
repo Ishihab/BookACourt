@@ -1,0 +1,23 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Venue - Hyprground{% endblock %}
+
+{% block content %}
+<section class="p-6 lg:p-10">
+  <div class="max-w-6xl mx-auto space-y-6">
+    <div class="card bg-base-100 shadow-xl">
+      <figure class="px-4 pt-4">
+        <img src="https://i.ibb.co/PGrpF91B/unnamed.webp" alt="Venue image" class="rounded-xl w-full object-cover max-h-96" />
+      </figure>
+      <div class="card-body">
+        <h1 class="card-title text-3xl">Venue: {{ venue_id|default('cyberjaya')|replace('-', ' ')|title }}</h1>
+        <p class="opacity-70">Premium pickleball courts, changing rooms, showers, and lounge.</p>
+        <div class="flex gap-3 mt-3">
+          <a href="/web/book" class="btn btn-primary uppercase">Book Now</a>
+          <a href="/web/venues" class="btn btn-ghost uppercase">Back to Venues</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
